@@ -12,7 +12,7 @@ st.set_page_config(page_title="ML Cook Book", page_icon=":trident:", layout="wid
 update_model_database('models.db')
 
 # Set background image for sidebar
-set_background_SB('https://github.com/BAProjects/MLCookBook/blob/main/images/splash.jpg')
+#set_background_SB('https://github.com/BAProjects/MLCookBook/blob/main/images/splash.jpg')
 
 # Sidebar content
 with st.sidebar:
