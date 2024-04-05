@@ -14,18 +14,15 @@ update_model_database('models.db')
 # Set background image for sidebar
 set_background_SB('images/splash.jpg')
 
-# Sidebar content
-with st.sidebar:
-    st.title('Navigation')
-    st.divider()
-    selected_page = st.radio("Go to", ("Home", "Models"))
-    st.divider()
+# Tabs content
+homepage, maincontent = st.tabs(['Home','ML Models'])
 
+with homepage:
 
-# Main content
-if selected_page == "Models":
-    # display Model information
-    main_content()
-else:
     # Display homepage content
     homepage_content()
+
+with maincontent:
+# Main content
+    # display Model information
+    main_content()
